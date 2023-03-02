@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style type="text/css">
+        /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); */
+        /* @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Noto+Sans:wght@300&family=Sawarabi+Gothic&display=swap') */
+        /* @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap'); */
+        /* @import url(//db.onlinewebfonts.com/c/1cb03f4dd029377516fa31f02556f0d5?family=TitlingGothicFB+Comp+Regular); */
+        /* FONT BEGINING */
+        
+        @font-face {
+            font-family: "Satoshi";
+            src: url("./fonts/Satoshi-Bold.woff2") format("woff2"), url("./fonts/Satoshi-Bold.woff.woff") format("woff");
+            font-weight: bold;
+        }
+        
+        @font-face {
+            font-family: "Satoshi";
+            src: url("./fonts/Satoshi-Black.woff2") format("woff2"), url("./fonts/Satoshi-Black.woff") format("woff");
+            font-weight: bold;
+        }
+        
+        @font-face {
+            font-family: "Satoshi";
+            src: url("./fonts/Satoshi-Light.woff2") format("woff2"), url("./fonts/Satoshi-Light.woff") format("woff");
+            font-weight: 400px;
+        }
+        
+        @font-face {
+            font-family: "Satoshi";
+            src: url("./fonts/Satoshi-Regular.woff2") format("woff2"), url("./fonts/Satoshi-Regular.woff") format("woff");
+            font-weight: 500px;
+        }
+        /* FONT END */
+        
+        Satoshi-Regular * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        table {
+            border-spacing: 0;
+        }
+        
+        td {
+            padding: 0;
+        }
+        
+        img {
+            border: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .wrapper {
+            width: 100%;
+            table-layout: fixed;
+            background-color: #f5f8fa;
+            padding-bottom: 60px;
+            padding-top: 57px;
+        }
+        
+        .main {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 701px;
+            border-spacing: 0;
+            font-family: "Lato", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+            color: #4a4a4a;
+        }
+        
+        .first-section {
+            background-color: #ffffff;
+            padding: 5% 7%;
+            font-family: "Satoshi";
+            font-weight: 500;
+            color: #1c2127;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        
+        .first-section h1 {
+            font-weight: 500;
+            /* font-family: 'Dela Gothic One', cursive; */
+            /* font-family: "TitlingGothicFB Comp Regular"; */
+            font-family: "Satoshi";
+            /* font-family: 'League Gothic', sans-serif; */
+            color: #1c2127;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        
+        .first-section h1,
+        .first-section h2 {
+            margin-bottom: 16px;
+            font-size: 24px;
+            font-weight: 900;
+            font: satoshi;
+        }
+        
+        .first-section p {
+            font-family: "Satoshi";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        .first-section .code {
+            box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+            border-radius: 1rem;
+            width: 156px;
+            padding: 15px 0;
+            background: #f5f8fa;
+            text-align: center;
+            font-weight: 500;
+            font-size: 40px;
+            /* font-family: "Lato", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif; */
+            font-family: "Satoshi";
+            color: #2764ff;
+            margin-top: 24px;
+        }
+        
+        .download-app {
+            padding: 24px 7%;
+            font-family: "Satoshi";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #1c2127;
+        }
+        
+        .double-column {
+            padding-top: 20px;
+        }
+        
+        .double-column div {
+            width: 290px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .google-play,
+        .app-store {
+            /* margin-left: -1rem; */
+            /* background-color: red; */
+        }
+        
+        .footer-icons img {
+            height: 40px;
+            width: 40px;
+            margin: 0 0.5rem;
+        }
+        
+        .footer {
+            padding: 0 7%;
+        }
+        
+        .footer p {
+            margin-bottom: 32px;
+            line-height: 26px;
+            font-family: "Satoshi";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 26px;
+            color: #1c2127;
+        }
+        
+        .unsubscribe {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        .first-section-style {
+            margin-top: 15px;
+        }
+        
+        .first-section-clock {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <table class="main">
+            <!-- HEADER -->
+            <tr>
+                <td>
+                    <img src="https://images2.imgbox.com/bf/6f/xllnk1mI_o.png" alt="roqqu banner" width="701" style="max-width: 100%" />
+                </td>
+            </tr>
+
+            <!-- FIRST SECTION -->
+            <tr>
+                <td class="first-section">
+                    <div class="first-section-clock">
+                        <img src="https://images2.imgbox.com/1c/0c/qacwNVZX_o.png" alt="" />
+                    </div>
+
+                    <!-- > Pending KYC INFORMATION </h1> -->
+                    <h1>Account Verification - Pending KYC Verification</h1>
+                    <h5>Hi Jaykay,</h5>
+                    <p class="first-section-style">
+                        We hope this email finds you well. We wanted to update you on the status of your account verification process.
+                    </p>
+                    <p class="first-section-style">
+                        Your KYC (Know Your Customer) information has been submitted and is currently being reviewed by our team.
+                    </p>
+                    <p class="first-section-style">
+                        As a regulated financial institution, we are required to verify the identity of our customers in accordance with regulatory requirements.If you have any questions or concerns regarding the KYC process, please do not hesitate to reach out to our support
+                        team at help@roqqu.com. Regards, The Roqqu Team
+                    </p>
+
+                    <p class="first-section-style">
+                        We take this process seriously to ensure the safety and security of our platform.
+                    </p>
+
+                    <p class="first-section-style">
+                        If you have any questions or concerns regarding the KYC process, please do not hesitate to reach out to our support team at help@roqqu.com. The Roqqu Team
+                    </p>
+                    <p class="first-section-style">Regards,</p>
+                    <p class="first-section-style">The Roqqu Team.</p>
+                </td>
+            </tr>
+
+            <!-- DOWNLOAD APP -->
+            <tr>
+                <td class="download-app">
+                    <p style="font-weight: bold; font-size: 18px">Download our app</p>
+
+                    <table width="100% ">
+                        <tr>
+                            <td class="double-column">
+                                <div style="margin-bottom: 1rem">
+                                    <a href="https://apps.apple.com/ng/app/roqqu-buy-and-sell-bitcoin/id1505370687 " class=" ">
+                                        <img src="https://images2.imgbox.com/6d/c2/sEeZqLv2_o.png " alt="app store " class="app-store" style="
+                          background-color: #071c35;
+                          padding: 0.7rem;
+                          border-radius: 4.06028px;
+                          margin-right: 1rem;
+                        " />
+                                    </a>
+
+                                    <a href="https://play.google.com/store/apps/details?id=com.roqqu.app ">
+                                        <img src="https://images2.imgbox.com/6d/22/YylBf69L_o.png " alt="play store " class="google-play" style="
+                          background-color: #071c35;
+                          padding: 0.6rem;
+                          border-radius: 4.06028px;
+                        " />
+                                    </a>
+                                </div>
+
+                                <div class="footer-icons">
+                                    <img src="https://images2.imgbox.com/99/ce/tzUCTvO9_o.png " alt=" " id="footer-layer " />
+
+                                    <img src=" https://images2.imgbox.com/7c/a6/Uy6cpPDG_o.png " alt=" " id="footer-twitter " />
+
+                                    <img src=" https://images2.imgbox.com/77/ee/jnNVniLj_o.png " alt=" " id="footer-linkedin " />
+
+                                    <img src="https://images2.imgbox.com/5e/82/lYHovtwA_o.png " alt=" " id="footer-instagram " />
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <!-- FOOTER -->
+            </tr>
+
+            <tr>
+                <td class="footer">
+                    <p>
+                        Messages from Roqqu, including our Customer Experience team, will always come from a help@roqqu.com email address. We will never ask you for account information like your password or answers to security questions
+                    </p>
+
+                    <p>
+                        <a href="#unsuscribe-link " class="unsubscribe"> Unsubscribe </a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
